@@ -7,7 +7,7 @@
 //	package main
 //
 //	import (
-//		"gorm-max/gormmaxgen"
+//		"github.com/Lookfukc/gorm-max/gormmaxgen"
 //		"yourapp/model"
 //	)
 //
@@ -49,7 +49,7 @@ type Config struct {
 	Models []any
 	// Namer 列名命名策略;nil 用默认 snake_case。
 	Namer schema.Namer
-	// Import gorm_max 包的导入路径,默认 "gorm-max"。
+	// Import gorm_max 包的导入路径,默认 "github.com/Lookfukc/gorm-max"。
 	Import string
 }
 
@@ -94,7 +94,7 @@ func build(cfg Config) ([]byte, error) {
 		cfg.Out = filepath.Join(cfg.Package, "fields_gen.go")
 	}
 	if cfg.Import == "" {
-		cfg.Import = "gorm-max"
+		cfg.Import = "github.com/Lookfukc/gorm-max"
 	}
 	namer := cfg.Namer
 	if namer == nil {

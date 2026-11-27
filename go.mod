@@ -1,4 +1,4 @@
-module gorm-max
+module github.com/Lookfukc/gorm-max
 
 go 1.25.0
 

@@ -40,7 +40,7 @@ go mod init demo
 ## 3. 添加依赖
 
 ```bash
-go get gorm-max
+go get github.com/Lookfukc/gorm-max
 go get github.com/glebarez/sqlite   # 教程用内存 SQLite(免 CGO);生产替换为 gorm.io/driver/mysql 等
 ```
 
@@ -106,7 +106,7 @@ import (
 	"fmt"
 	"time"
 
-	gorm_max "gorm-max"
+	gorm_max "github.com/Lookfukc/gorm-max"
 
 	"github.com/glebarez/sqlite"
 	"gorm.io/gorm"

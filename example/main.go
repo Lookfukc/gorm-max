@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"log"
 
-	"gorm-max"
-	"gorm-max/example/model"
-	"gorm-max/example/query"
+	"github.com/Lookfukc/gorm-max"
+	"github.com/Lookfukc/gorm-max/example/model"
+	"github.com/Lookfukc/gorm-max/example/query"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
@@ -86,7 +86,7 @@ func main() {
 	// 10. 编译期类型校验写法(可选):值类型不匹配直接编译报错
 	_, _ = svc.SelectList(ctx, gorm_max.Eq(svc.Query(), func(x *model.User) string { return x.Name }, "tom"))
 
-	// 11. 插件(可选,import "gorm-max/plugin"),打开数据库后注册一次:
+	// 11. 插件(可选,import "github.com/Lookfukc/gorm-max/plugin"),打开数据库后注册一次:
 	//   乐观锁:实体字段加 gorm:"version" 标签 → 更新自动 SET version=旧+1 / WHERE version=旧,0 行即冲突
 	//     _ = plugin.RegisterOptimisticLock(db)
 	//   多租户:模型带 tenant_id 列,ctx 携带租户后自动注入/填充

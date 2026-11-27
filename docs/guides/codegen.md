@@ -19,8 +19,8 @@ package main
 import (
     "log"
 
-    "gorm-max/example/model"
-    "gorm-max/gormmaxgen"
+    "github.com/Lookfukc/gorm-max/example/model"
+    "github.com/Lookfukc/gorm-max/gormmaxgen"
 )
 
 func main() {

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"gorm-max"
-	"gorm-max/plugin"
+	"github.com/Lookfukc/gorm-max"
+	"github.com/Lookfukc/gorm-max/plugin"
 
 	"github.com/glebarez/sqlite"
 	"gorm.io/gorm"

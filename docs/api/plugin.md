@@ -1,9 +1,9 @@
 # 插件
 
-包路径:`gorm-max/plugin`。对应 MP 的 Interceptor 体系:打开数据库后**注册一次**,作用于该 `*gorm.DB` 的所有会话(包括事务),不注册则零开销。
+包路径:`github.com/Lookfukc/gorm-max/plugin`。对应 MP 的 Interceptor 体系:打开数据库后**注册一次**,作用于该 `*gorm.DB` 的所有会话(包括事务),不注册则零开销。
 
 ```go
-import "gorm-max/plugin"
+import "github.com/Lookfukc/gorm-max/plugin"
 
 plugin.RegisterOptimisticLock(db) // 乐观锁
 plugin.RegisterTenant(db)         // 多租户

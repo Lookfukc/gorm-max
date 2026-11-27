@@ -5,8 +5,8 @@ package main
 import (
 	"log"
 
-	"gorm-max/example/model"
-	"gorm-max/gormmaxgen"
+	"github.com/Lookfukc/gorm-max/example/model"
+	"github.com/Lookfukc/gorm-max/gormmaxgen"
 )
 
 // 生成示例的字段集。运行方式(工作目录需在 example/ 下,Out 相对 CWD):

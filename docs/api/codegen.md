@@ -1,6 +1,6 @@
 # 代码生成器:gormmaxgen
 
-包路径:`gorm-max/gormmaxgen`。反射模式生成器:解析模型(与运行时**同一个** `schema.Parse` + 命名策略,列名不可能漂移),为每个模型产出**类型化字段集**声明文件。
+包路径:`github.com/Lookfukc/gorm-max/gormmaxgen`。反射模式生成器:解析模型(与运行时**同一个** `schema.Parse` + 命名策略,列名不可能漂移),为每个模型产出**类型化字段集**声明文件。
 
 产出物形态:
 
@@ -10,7 +10,7 @@
 package query
 
 import (
-	gorm_max "gorm-max"
+	gorm_max "github.com/Lookfukc/gorm-max"
 )
 
 // UserFields User 的类型化字段集(表 users)。
@@ -42,7 +42,7 @@ type Config struct {
 	Package string       // 生成包名,默认 "query"
 	Models  []any        // 模型实例或指针,必须是命名类型
 	Namer   schema.Namer // 列名命名策略;nil 用默认 snake_case
-	Import  string       // gorm_max 包的导入路径,默认 "gorm-max"
+	Import  string       // gorm_max 包的导入路径,默认 "github.com/Lookfukc/gorm-max"
 }
 ```
 
@@ -77,7 +77,7 @@ import (
 	"log"
 
 	"yourapp/model"
-	"gorm-max/gormmaxgen"
+	"github.com/Lookfukc/gorm-max/gormmaxgen"
 )
 
 func main() {

@@ -46,7 +46,7 @@ users, _ = svc.SelectList(ctx, svc.Query().
 ## 安装
 
 ```bash
-go get gorm-max
+go get github.com/Lookfukc/gorm-max
 # 本地开发(未发布时)用 replace 方式,见 docs/INTEGRATION.md
 ```
 

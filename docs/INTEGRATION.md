@@ -28,9 +28,9 @@
 **发布前(本地路径 replace,推荐)**:在 `Memory-Record/go.mod` 中追加:
 
 ```go
-require gorm-max v0.0.0
+require github.com/Lookfukc/gorm-max v0.0.0
 
-replace gorm-max => ../gorm-max
+replace github.com/Lookfukc/gorm-max => ../gorm-max
 ```
 
 (两仓库同在 `D:\project\` 下,`../gorm-max` 即 `D:\project\gorm-max`。)
@@ -45,7 +45,7 @@ go mod tidy
 **发布后(GitHub)**:
 
 ```bash
-go get github.com/<your-org>/gorm-max@latest
+go get github.com/Lookfukc/gorm-max@latest
 ```
 
 > 引入后新增依赖只有 `gorm-max` 本身;`gorm.io/gorm`、mysql 驱动项目里已有,不会引入新版本。
@@ -66,8 +66,8 @@ go get gorm.io/plugin/soft_delete
 
 ```go
 import (
-	"gorm-max"
-	"gorm-max/plugin"
+	"github.com/Lookfukc/gorm-max"
+	"github.com/Lookfukc/gorm-max/plugin"
 	"Memory-Record/internal/models/entity"
 )
 
@@ -90,7 +90,7 @@ func MysqlInit() error {
 `global.go` 增加变量:
 
 ```go
-import gorm_max "gorm-max"
+import gorm_max "github.com/Lookfukc/gorm-max"
 
 var (
 	// ...(原有变量不变)...
@@ -173,7 +173,7 @@ func (r *UserRepository) ExistsByUserName(ctx context.Context, userName string) 
 **After(gorm-max)**:
 
 ```go
-import gorm_max "gorm-max"
+import gorm_max "github.com/Lookfukc/gorm-max"
 
 type UserRepository struct {
 	m *gorm_max.Mapper[entity.User] // 替换 db *gorm.DB
@@ -241,7 +241,7 @@ import (
 	"log"
 
 	"Memory-Record/internal/models/entity"
-	"gorm-max/gormmaxgen"
+	"github.com/Lookfukc/gorm-max/gormmaxgen"
 )
 
 func main() {

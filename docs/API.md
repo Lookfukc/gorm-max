@@ -1,6 +1,6 @@
 # gorm-max API 参考
 
-> 包名 `gorm_max`(模块路径 `gorm-max`),推荐导入写法:`import gorm_max "gorm-max"`
+> 包名 `gorm_max`(模块路径 `github.com/Lookfukc/gorm-max`),推荐导入写法:`import gorm_max "github.com/Lookfukc/gorm-max"`
 >
 > 所有涉及查询的方法第一个参数都是 `context.Context`;未找到记录统一返回 `gorm.ErrRecordNotFound`。
 

@@ -5,7 +5,7 @@
 package query
 
 import (
-	gorm_max "gorm-max"
+	gorm_max "github.com/Lookfukc/gorm-max"
 )
 
 // UserFields User 的类型化字段集(表 users)。

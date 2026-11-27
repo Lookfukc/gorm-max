@@ -20,7 +20,7 @@ func NewMapper[T any](db *gorm.DB, opts ...MapperOption) *Mapper[T]
 **示例**
 
 ```go
-import gorm_max "gorm-max"
+import gorm_max "github.com/Lookfukc/gorm-max"
 
 m := gorm_max.NewMapper[User](db)
 
